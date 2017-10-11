@@ -1,0 +1,483 @@
+!SESSION 2017-01-02 23:05:49.109 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2017-01-02 23:07:16.286
+!MESSAGE Part already exists in page layout: org.zend.php.framework.ui.views.mvc.
+
+!ENTRY org.eclipse.ui 4 4 2017-01-02 23:07:16.333
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.jface 2 0 2017-01-02 23:07:21.927
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-01-02 23:07:21.927
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,Remove,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,Edit,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@16016c2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-01-02 23:07:22.130
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-01-02 23:07:22.130
+!MESSAGE Conflict for 'org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@f1b67e,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@1a912db),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@51fb5)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1042245,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@1a912db),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@51fb5)),sourcePriority=1064960)
+
+!ENTRY org.eclipse.php.debug.core 4 4 2017-01-02 23:07:27.495
+!MESSAGE The debug port 9000 is in use. Please select a different port for the debugger.
+
+!ENTRY org.eclipse.php.debug.core 4 4 2017-01-02 23:07:27.511
+!MESSAGE Could not open a broadcast port on 20080 (port might be in use). Select a different port number
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-01-02 23:07:27.699
+!MESSAGE Connection to http://download.eclipse.org/releases/juno/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1129)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:699)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:879)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:570)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:422)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:355)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:721)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:640)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY org.eclipse.osgi 2 1 2017-01-02 23:07:28.214
+!MESSAGE NLS unused message: CacheManager_CannotLoadNonUrlLocation in: org.eclipse.equinox.internal.p2.repository.messages
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-01-02 23:07:28.230
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/juno/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:232)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-01-02 23:07:28.246
+!MESSAGE Connection to http://downloads.zend.com/studio-eclipse/updates/10_5/p2.index failed on downloads.zend.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: downloads.zend.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1129)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:699)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:879)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:570)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:422)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:355)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:721)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:640)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-01-02 23:07:29.051
+!MESSAGE Unknown Host: http://downloads.zend.com/studio-eclipse/updates/10_5/content.xml
+!STACK 0
+java.net.UnknownHostException: downloads.zend.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:232)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-01-02 23:07:29.067
+!MESSAGE Connection to http://downloads.zend.com/studio-eclipse/updates-extra/10_5/p2.index failed on downloads.zend.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: downloads.zend.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1129)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:699)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:879)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:570)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:422)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:355)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:721)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:640)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2017-01-02 23:07:29.317
+!MESSAGE Unknown Host: http://downloads.zend.com/studio-eclipse/updates-extra/10_5/content.xml
+!STACK 0
+java.net.UnknownHostException: downloads.zend.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:232)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.zend.php.common 1 0 2017-01-02 23:07:34.241
+!MESSAGE No response for 2045msec
+Thread[main,6,main]
+ org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+ org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+ org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+ org.eclipse.jface.window.Window.open(Window.java:801)
+ org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:334)
+ org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:364)
+ org.eclipse.jface.dialogs.MessageDialog.openWarning(MessageDialog.java:477)
+ com.zend.php.debug.core.communication.BroadcastDaemon$1.run(BroadcastDaemon.java:69)
+ org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+ org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+ org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+ org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+ org.eclipse.jface.window.Window.open(Window.java:801)
+ org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:334)
+ org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:364)
+ org.eclipse.jface.dialogs.MessageDialog.openWarning(MessageDialog.java:477)
+ com.zend.php.debug.core.communication.AdvancedDebuggerCommunicationDaemon$1.run(AdvancedDebuggerCommunicationDaemon.java:122)
+ org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+ org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+ org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.zend.php.common 4 0 2017-01-02 23:07:37.087
+!MESSAGE A problem occurred while accessing the update site.
+!SUBENTRY 1 org.eclipse.equinox.p2.discovery 4 0 2017-01-02 23:07:37.087
+!MESSAGE RemoteBundleDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unknown Host: http://downloads.zend.com/studio-eclipse/updates-extra/10_5/directory.xml
+	at org.eclipse.equinox.internal.p2.discovery.compatibility.util.CacheManager.createCache(CacheManager.java:110)
+	at org.eclipse.equinox.internal.p2.discovery.compatibility.util.TransportUtil.readResource(TransportUtil.java:101)
+	at org.eclipse.equinox.internal.p2.discovery.compatibility.RemoteBundleDiscoveryStrategy.performDiscovery(RemoteBundleDiscoveryStrategy.java:81)
+	at org.eclipse.equinox.internal.p2.discovery.Catalog.performDiscovery(Catalog.java:85)
+	at org.zend.php.common.ZendCatalogViewer$5.run(ZendCatalogViewer.java:411)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.UnknownHostException: downloads.zend.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:232)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1006 2017-01-02 23:07:37.102
+!MESSAGE Unknown Host: http://downloads.zend.com/studio-eclipse/updates-extra/10_5/directory.xml
+!STACK 0
+java.net.UnknownHostException: downloads.zend.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.provider.filetransfer.events.socket.SocketEventCreateUtil.createSocket(SocketEventCreateUtil.java:43)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:81)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:73)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient.ECFHttpClientProtocolSocketFactory.createSocket(ECFHttpClientProtocolSocketFactory.java:65)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:232)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.zend.php.zendserver.deployment.ui 4 0 2017-01-02 23:07:38.415
+!MESSAGE Address already in use: JVM_Bind
+!STACK 0
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at org.zend.php.zendserver.deployment.ui.chrome.SocketCommandListener.openServerSocket(SocketCommandListener.java:69)
+	at org.zend.php.zendserver.deployment.ui.chrome.SocketCommandListener$1.run(SocketCommandListener.java:39)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-01-03 03:33:42.669 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -showlocation C:\www\htdocs\kiba\protected\modules\member\controllers\MemberaccountController.php
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation C:\www\htdocs\kiba\protected\modules\member\controllers\MemberaccountController.php
+
+!ENTRY org.eclipse.jface 2 0 2017-01-03 03:34:04.680
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-01-03 03:34:04.680
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,Remove,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,Edit,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@113f386,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.zend.php.common 1 0 2017-01-03 03:34:19.118
+!MESSAGE No response for 6064msec
+Thread[main,6,main]
+ java.util.zip.ZipFile.getEntry(Native Method)
+ java.util.zip.ZipFile.getEntry(Unknown Source)
+ org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getZipEntry(ZipBundleFile.java:117)
+ org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getEntry(ZipBundleFile.java:247)
+ org.eclipse.osgi.baseadaptor.BaseData.getEntry0(BaseData.java:114)
+ org.eclipse.osgi.baseadaptor.BaseData.getEntry(BaseData.java:105)
+ org.eclipse.osgi.framework.internal.core.AbstractBundle.getEntry0(AbstractBundle.java:1251)
+ org.eclipse.osgi.framework.internal.core.AbstractBundle.getEntry(AbstractBundle.java:1246)
+ org.eclipse.core.internal.runtime.FindSupport.findInPlugin(FindSupport.java:232)
+ org.eclipse.core.internal.runtime.FindSupport.findNL(FindSupport.java:216)
+ org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:108)
+ org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:60)
+ org.eclipse.core.runtime.FileLocator.find(FileLocator.java:84)
+ org.eclipse.debug.internal.ui.DebugPluginImages.declareRegistryImage(DebugPluginImages.java:278)
+ org.eclipse.debug.internal.ui.DebugPluginImages.declareImages(DebugPluginImages.java:88)
+ org.eclipse.debug.internal.ui.DebugPluginImages.initializeImageRegistry(DebugPluginImages.java:336)
+ org.eclipse.debug.internal.ui.DebugPluginImages.getImageRegistry(DebugPluginImages.java:291)
+ org.eclipse.debug.internal.ui.DebugPluginImages.getImageDescriptor(DebugPluginImages.java:354)
+ org.eclipse.debug.internal.ui.actions.breakpoints.SkipAllBreakpointsAction.<init>(SkipAllBreakpointsAction.java:61)
+ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+ sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+ sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+ java.lang.reflect.Constructor.newInstance(Unknown Source)
+ java.lang.Class.newInstance(Unknown Source)
+ org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+ org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+ org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+ org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+ org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:260)
+ org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+ org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:275)
+ org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:299)
+ org.eclipse.ui.internal.AbstractSelectionService.fireSelection(AbstractSelectionService.java:156)
+ org.eclipse.ui.internal.AbstractSelectionService.setActivePart(AbstractSelectionService.java:282)
+ org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:135)
+ org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:125)
+ org.eclipse.ui.internal.WWinPartService$WWinListener.partDeactivated(WWinPartService.java:50)
+ org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:115)
+ org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+ org.eclipse.core.runtime.Platform.run(Platform.java:857)
+ org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:55)
+ org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:113)
+ org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:242)
+ org.eclipse.ui.internal.PartService.setActivePart(PartService.java:300)
+ org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:57)
+ org.eclipse.ui.internal.PartList.setActivePart(PartList.java:136)
+ org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3649)
+ org.eclipse.ui.internal.WorkbenchPage.internalActivate(WorkbenchPage.java:700)
+ org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:672)
+ org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2970)
+ org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2863)
+ org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2855)
+ org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2806)
+ org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2802)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2786)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2769)
+ org.eclipse.ui.ide.IDE.openInternalEditorOnFileStore(IDE.java:1315)
+ org.eclipse.ui.internal.ide.application.DelayedEventsProcessor$1.run(DelayedEventsProcessor.java:106)
+ org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+ org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+ org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-01-03 03:34:34.294
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-01-03 03:34:34.294
+!MESSAGE Conflict for 'org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@a6d79a,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@9af9a9),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@468792)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@194c1d8,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@9af9a9),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@468792)),sourcePriority=1064960)
